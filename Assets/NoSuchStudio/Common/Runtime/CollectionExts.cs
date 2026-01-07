@@ -1,0 +1,26 @@
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace NoSuchStudio.Common {
+    public static class CollectionExts {
+
+        public static TValue GetValueOrDefault<TKey, TValue>(this Dictionary<TKey, TValue> dic, TKey key, TValue defVal = default(TValue)) {
+            TValue retVal;
+            bool found = dic.TryGetValue(key, out retVal);
+            if (!found) {
+                retVal = defVal;
+            }
+            return retVal;
+        }
+
+        public static Dictionary<string, object> ToStringObjectDic(this Dictionary<string, long> dic) {
+            var res = dic.ToDictionary(kvp => kvp.Key, kvp => (object)kvp.Value);
+            return res;
+        }
+
+        public static Dictionary<string, long> ToStringLongDic(this Dictionary<string, object> dic) {
+            var res = dic.Where(kvp => kvp.Value is long).ToDictionary(kvp => kvp.Key, kvp => (long)kvp.Value);
+            return res;
+        }
+    }
+}

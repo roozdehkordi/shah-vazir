@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7f8c6fc7d69ab4268ba4428164ab60f5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - shahSprite: {fileID: 21300000, guid: 3faf651d96cbbfc4e9ba1c73dfbec099, type: 3}
+  - vazirSprite: {fileID: 21300000, guid: 4ffda70d2cf601c48921190bb44ce785, type: 3}
+  - dozdSprite: {fileID: 21300000, guid: 8a315ac790ff7e34a9c8121288f65f69, type: 3}
+  - jalladSprite: {fileID: 21300000, guid: 8b7f36c2f814534468627fec82cad7a7, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
